@@ -40,11 +40,16 @@ function FilterComponentLocal(props) {
 
   const handleChange = (e, i) => {
     const { value, name } = e.target;
+    console.log("name", name);
+    console.log("value", value);
     const newSales = [...sales];
     newSales[i] = {
       ...newSales[i],
       [name]: value,
     };
+    console.log("newSales", newSales);
+    sales = newSales;
+    console.log("sales", sales);
     return sales;
   };
   return (
