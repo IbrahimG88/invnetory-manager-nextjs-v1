@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import MeetupList from "../../components/mymeetups/MeetupList";
+import MeetupList from "../../components/mymeetupsmongo/MeetupList";
 
 function AllMeetupsPage() {
   const [isLoading, setIsLoading] = useState(true);
